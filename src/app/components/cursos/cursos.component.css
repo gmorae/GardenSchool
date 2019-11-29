@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+.title{
+    font-family: 'Gravitas One', cursive !important;
+}
+
+.btn-light-bluee{
+    background: #4015DE !important;
+    color: #fff;
+}
