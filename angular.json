@@ -26,9 +26,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/js/maquinadeescrever.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

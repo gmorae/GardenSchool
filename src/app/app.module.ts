@@ -9,6 +9,7 @@ import { CarousselComponent } from './components/caroussel/caroussel.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AdmComponent } from './pages/adm/adm.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './pages/login/login.component';
     CarousselComponent,
     CursosComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    AdmComponent
   ],
   imports: [
     BrowserModule,
