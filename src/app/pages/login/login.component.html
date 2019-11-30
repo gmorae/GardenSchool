@@ -9,16 +9,19 @@
             <div class="col-md-6 ml-auto mb-lg-0 mb-4">
                 <form class="" action="">
                     <h3 class="font-weight-bold my-3 text-center title">Login</h3>
+                    <div class="alert alert-danger" role="alert" *ngIf="msgErro">
+                        <strong>{{msg}}</strong>
+                    </div>
                     <div class="md-form mt-3">
-                        <input type="email" id="email" class="form-control">
+                        <input type="email" name="emial" [(ngModel)]="user.email" id="email" class="form-control">
                         <label for="email">E-mail</label>
                     </div>
                     <div class="md-form">
-                        <input type="password" id="senha" class="form-control">
+                        <input type="password" name="senha" [(ngModel)]="user.senha" id="senha" class="form-control">
                         <label for="senha">Senha</label>
                     </div>
                     <button class="btn btn-outline-indigo btn-rounded btn-block z-depth-0 my-4 waves-effect"
-                        type="submit">Entrar
+                        type="submit" (click)="fazerLogin()">Entrar
                     </button>
                 </form>
             </div>

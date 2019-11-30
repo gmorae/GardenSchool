@@ -10,6 +10,8 @@ import { CursosComponent } from './components/cursos/cursos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AdmComponent } from './pages/adm/adm.component';
+import { AuthService } from './pages/login/auth.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { AdmComponent } from './pages/adm/adm.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
