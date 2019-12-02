@@ -8,17 +8,19 @@ import { Login } from './login';
 export class AuthService {
   msg = ''
   msgErro = false
-  private userAuth : boolean = false
-  constructor(private rota : Router) { }
+  private userAuth: boolean = false
+  constructor(private rota: Router) { }
 
-  fazerLogin(user : Login){
-    if (user.email === 'a@a.com' && user.senha === '123'){
+  fazerLogin(user: Login) {
+    if (user.email === 'a@a.com' && user.senha === '123') {
       this.userAuth = true;
       this.rota.navigate(['/Adm'])
+
     } else {
       this.userAuth = false;
       alert('Usuario ou senha incorretos')
-      
+
     }
+
   }
 }
