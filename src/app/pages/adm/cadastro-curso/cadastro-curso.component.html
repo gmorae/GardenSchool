@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="my-5 text-center">
+        Cursos
+    </h1>
+    <button type="button" class="btn btn-outline-dark black waves-effect"><i class="fas fa-plus pr-2"
+            aria-hidden="true"></i>Novo Curso</button>
+    <table class="table text-center table-borderless">
+        <thead class="black white-text">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of curso">
+                <th scope="row">{{i.id_curso}}</th>
+                <td>{{i.nome}}</td>
+                <td>{{i.descricao}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

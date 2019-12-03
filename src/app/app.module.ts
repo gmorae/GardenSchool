@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-aluno.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastrarProfComponent } from './pages/adm/cadastrar-prof/cadastrar-prof.component';
+import { CadastroCursoComponent } from './pages/adm/cadastro-curso/cadastro-curso.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { CadastrarProfComponent } from './pages/adm/cadastrar-prof/cadastrar-pro
     LoginComponent,
     AdmComponent,
     CadastrarAlunoComponent,
-    CadastrarProfComponent
+    CadastrarProfComponent,
+    CadastroCursoComponent
   ],
   imports: [
     BrowserModule,

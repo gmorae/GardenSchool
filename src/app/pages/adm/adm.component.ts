@@ -27,8 +27,6 @@ export class AdmComponent implements OnInit {
     })
     this.pegaRetornoCurso$ = this.consulta.pegaRetornoCurso$.subscribe(() => {
       this.curso = this.consulta.Curso.length
-      console.log(this.curso);
-      
     })
   }
 

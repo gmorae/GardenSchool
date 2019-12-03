@@ -5,6 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AdmComponent } from './pages/adm/adm.component';
 import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-aluno.component';
 import { CadastrarProfComponent } from './pages/adm/cadastrar-prof/cadastrar-prof.component';
+import { CadastroCursoComponent } from './pages/adm/cadastro-curso/cadastro-curso.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'Adm/CadastroProf',
     component: CadastrarProfComponent
+  },
+  {
+    path: 'Adm/CadastroCurso',
+    component: CadastroCursoComponent
   }
 ];
 

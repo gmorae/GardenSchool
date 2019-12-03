@@ -43,26 +43,31 @@
         {
             "id_curso": 1,
             "nome": "React",
+            "descricao": "top",
             "id_usuario": 1
         },
         {
             "id_curso": 2,
             "nome": "Angular",
+            "descricao": "top",
             "id_usuario": 1
         },
         {
             "id_curso": 3,
             "nome": "Nodejs",
+            "descricao": "top",
             "id_usuario": 1
         },
         {
             "id_curso": 4,
             "nome": "TypeScript",
+            "descricao": "top",
             "id_usuario": 1
         },
         {
             "id_curso": 5,
             "nome": "JavaScript",
+            "descricao": "top",
             "id_usuario": 1
         }
     ]
