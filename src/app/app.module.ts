@@ -12,6 +12,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AdmComponent } from './pages/adm/adm.component';
 import { AuthService } from './pages/login/auth.service';
 import { FormsModule } from '@angular/forms';
+import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-aluno.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     CursosComponent,
     FooterComponent,
     LoginComponent,
-    AdmComponent
+    AdmComponent,
+    CadastrarAlunoComponent
   ],
   imports: [
     BrowserModule,

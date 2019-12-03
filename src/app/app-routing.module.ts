@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AdmComponent } from './pages/adm/adm.component';
+import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-aluno.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'Adm',
     component: AdmComponent
+  },
+  {
+    path: 'Adm/CadastroAluno',
+    component: CadastrarAlunoComponent
   }
 ];
 
