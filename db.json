@@ -39,35 +39,23 @@
             "nome": "Aluno"
         }
     ],
-    "curso":[
+    "curso": [
         {
             "id_curso": 1,
             "nome": "React",
-            "descricao": "top",
+            "descricao": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.",
             "id_usuario": 1
         },
         {
             "id_curso": 2,
             "nome": "Angular",
-            "descricao": "top",
+            "descricao": "Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google",
             "id_usuario": 1
         },
         {
             "id_curso": 3,
             "nome": "Nodejs",
-            "descricao": "top",
-            "id_usuario": 1
-        },
-        {
-            "id_curso": 4,
-            "nome": "TypeScript",
-            "descricao": "top",
-            "id_usuario": 1
-        },
-        {
-            "id_curso": 5,
-            "nome": "JavaScript",
-            "descricao": "top",
+            "descricao": "Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos, criado por Ryan Dahl em 2009, focado em migrar a programação do Javascript do cliente para os servidores",
             "id_usuario": 1
         }
     ]
