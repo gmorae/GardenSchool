@@ -13,7 +13,7 @@ import { AdmComponent } from './pages/adm/adm.component';
 import { AuthService } from './pages/login/auth.service';
 import { FormsModule } from '@angular/forms';
 import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-aluno.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,10 @@ import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-a
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
