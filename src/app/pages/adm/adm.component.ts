@@ -10,17 +10,24 @@ import { ConsultaService } from 'src/app/service/consulta.service';
 export class AdmComponent implements OnInit {
   public user: any;
   public aluno: any;
-  public prof : any
+  public prof: any;
+  public curso: any;
   public pegaRetornoAluno$: Subscription
+  public pegaRetornoCurso$: Subscription
+
   constructor(private consulta: ConsultaService) { }
 
   ngOnInit() {
     this.consulta.listaUser()
+    this.consulta.listCursos()
     this.pegaRetornoAluno$ = this.consulta.pegaRetornoUser$.subscribe(() => {
       this.user = this.consulta.User
       this.aluno = this.consulta.filtro(this.user, 3).length
-      console.log(this.aluno);
       this.prof = this.consulta.filtro(this.user, 2).length
+    })
+    this.pegaRetornoCurso$ = this.consulta.pegaRetornoCurso$.subscribe(() => {
+      this.curso = this.consulta.Curso.length
+      console.log(this.curso);
       
     })
   }

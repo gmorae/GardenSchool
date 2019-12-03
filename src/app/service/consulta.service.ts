@@ -8,13 +8,23 @@ import { environment } from 'src/environments/environment';
 })
 export class ConsultaService {
   public User: any;
+  public Curso: any;
   public pegaRetornoUser$: Subject<any> = new Subject<any>();
+  public pegaRetornoCurso$: Subject<any> = new Subject<any>();
+
   constructor(public api: ApiService) { }
 
   listaUser() {
     this.api.get(environment.apiUser).subscribe(res => {
       this.User = res
       this.pegaRetornoUser$.next(true)
+    })
+  }
+
+  listCursos(){
+    this.api.get(environment.apiCurso).subscribe(res => {
+      this.Curso = res
+      this.pegaRetornoCurso$.next(true)
     })
   }
 
