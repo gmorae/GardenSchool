@@ -7,15 +7,22 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ConsultaService {
-  public aluno: any;
-  public pegaRetornoAluno$: Subject<any> = new Subject<any>();
-  constructor(    public api: ApiService) { }
+  public User: any;
+  public pegaRetornoUser$: Subject<any> = new Subject<any>();
+  constructor(public api: ApiService) { }
 
-  listaAluno() {
-    this.api.get(environment.apiUser).subscribe( res => {
-      this.aluno = res
-      this.pegaRetornoAluno$.next(true)
+  listaUser() {
+    this.api.get(environment.apiUser).subscribe(res => {
+      this.User = res
+      this.pegaRetornoUser$.next(true)
     })
   }
-  
+
+  filtro(user: any[], value: any) {
+    var filtrados = user.filter(function (record) {
+        return record.id_tipo == value;
+    });
+    return filtrados;
+  }
 }
+

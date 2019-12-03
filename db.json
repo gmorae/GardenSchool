@@ -1,0 +1,42 @@
+{
+    "usuarios": [
+        {
+            "id": "1",
+            "name": "name 1",
+            "password": "password 1",
+            "id_tipo": 1
+        },
+        {
+            "id": "2",
+            "name": "name 2",
+            "password": "password 2",
+            "id_tipo": 2
+        },
+        {
+            "id": "3",
+            "name": "name 3",
+            "password": "password 3",
+            "id_tipo": 3
+        },
+        {
+            "id": "4",
+            "name": "name 4",
+            "password": "password 4",
+            "id_tipo": 2
+        }
+    ],
+    "tipo": [
+        {
+            "id": 1,
+            "nome": "Adm"
+        },
+        {
+            "id": 2,
+            "nome": "Professor"
+        },
+        {
+            "id": 3,
+            "nome": "Aluno"
+        }
+    ]
+}
