@@ -4,24 +4,32 @@
             "id": "1",
             "name": "name 1",
             "password": "password 1",
+            "email": "teste@teste.com",
+            "phone": "11 99999-9999",
             "id_tipo": 1
         },
         {
             "id": "2",
             "name": "name 2",
             "password": "password 2",
+            "email": "teste@teste.com",
+            "phone": "11 99999-9999",
             "id_tipo": 2
         },
         {
             "id": "3",
             "name": "name 3",
             "password": "password 3",
+            "email": "teste@teste.com",
+            "phone": "11 99999-9999",
             "id_tipo": 3
         },
         {
             "id": "4",
             "name": "name 4",
             "password": "password 4",
+            "email": "teste@teste.com",
+            "phone": "11 99999-9999",
             "id_tipo": 2
         }
     ],
