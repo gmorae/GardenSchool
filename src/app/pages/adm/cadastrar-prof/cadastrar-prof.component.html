@@ -2,14 +2,16 @@
     <h1 class="my-5 text-center">
         Professores
     </h1>
-    <button type="button" data-toggle="modal" data-target="#modalRegisterForm"  class="btn btn-outline-dark black waves-effect"><i class="fas fa-plus pr-2"
-            aria-hidden="true"></i>Novo Professor</button>
+    <button type="button" data-toggle="modal" data-target="#modalRegisterForm"
+        class="btn btn-outline-dark black waves-effect"><i class="fas fa-plus pr-2" aria-hidden="true"></i>Novo
+        Professor</button>
     <table class="table text-center table-borderless">
         <thead class="black white-text">
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Telefone</th>
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +19,10 @@
                 <td>{{i.name}}</td>
                 <td>{{i.email}}</td>
                 <td>{{i.phone}}</td>
+                <td>
+                    <span class="table-remove "><i class="fa fa-edit" aria-hidden="true"></i></span>
+                    <span class="table-remove ml-3"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                </td>
             </tr>
         </tbody>
     </table>
