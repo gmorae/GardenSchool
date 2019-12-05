@@ -34,5 +34,13 @@ export class ConsultaService {
     });
     return filtrados;
   }
+
+  post(api: string, body: any) {
+    this.api.post(api, body).subscribe(() => {
+      console.log("sucesso");
+    }, err => {
+      console.log("erro");
+    })
+  }
 }
 

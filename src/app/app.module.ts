@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -16,6 +15,8 @@ import { CadastrarAlunoComponent } from './pages/adm/cadastrar-aluno/cadastrar-a
 import { HttpClientModule } from '@angular/common/http';
 import { CadastrarProfComponent } from './pages/adm/cadastrar-prof/cadastrar-prof.component';
 import { CadastroCursoComponent } from './pages/adm/cadastro-curso/cadastro-curso.component';
+import { CardComponent } from './components/card/card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,15 +29,15 @@ import { CadastroCursoComponent } from './pages/adm/cadastro-curso/cadastro-curs
     AdmComponent,
     CadastrarAlunoComponent,
     CadastrarProfComponent,
-    CadastroCursoComponent
+    CadastroCursoComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
-
-
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

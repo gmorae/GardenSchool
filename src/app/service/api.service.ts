@@ -12,4 +12,8 @@ export class ApiService {
   get(url : string) : Observable<any>{
     return this.http.get(url)
   }
+
+  post(api: string, dados : any){
+    return this.http.post(api, dados)
+  }
 }
