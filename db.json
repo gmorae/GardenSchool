@@ -66,5 +66,13 @@
             "descricao": "Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos, criado por Ryan Dahl em 2009, focado em migrar a programação do Javascript do cliente para os servidores",
             "id_usuario": 1
         }
+    ],
+    "atividade": [
+        {
+            "id_atividade": 1,
+            "nome": "Fazer footer",
+            "descricao": "Faça um curso com o react com interação com uma API fake",
+            "id_professor": 4
+        }
     ]
 }

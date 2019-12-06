@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiUser : 'http://localhost:3000/usuarios',
+  apiAtividade : 'http://localhost:3000/atividade',
   apiCurso : 'http://localhost:3000/curso'
 };
 

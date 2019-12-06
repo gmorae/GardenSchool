@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="mt-5">
+        <h1 class="text-center mb-3" *ngIf="!User">Atividades</h1>
+        <h1 class="text-center mb-3" *ngIf="User">Minhas atividades</h1>
+
+        <table class="table text-center table-borderless">
+            <thead class="black white-text">
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of atividade">
+                    <td>{{i.nome}}</td>
+                    <td>{{i.descricao}}</td>
+                    <td><button type="button" class="btn btn-dark btn-sm btn-block">Marcar como concluido</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

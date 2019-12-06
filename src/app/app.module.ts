@@ -17,6 +17,8 @@ import { CadastrarProfComponent } from './pages/adm/cadastrar-prof/cadastrar-pro
 import { CadastroCursoComponent } from './pages/adm/cadastro-curso/cadastro-curso.component';
 import { CardComponent } from './components/card/card.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProfComponent } from './pages/prof/prof.component';
+import { AtividadesComponent } from './pages/prof/atividades/atividades.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     CadastrarAlunoComponent,
     CadastrarProfComponent,
     CadastroCursoComponent,
-    CardComponent
+    CardComponent,
+    ProfComponent,
+    AtividadesComponent
   ],
   imports: [
     BrowserModule,

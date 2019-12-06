@@ -9,12 +9,16 @@ import { NivelService } from 'src/app/service/nivel.service';
 export class NavbarComponent implements OnInit {
   
   adm = false
-  user = false
+  Prof = false
+  User = false
+
   constructor(private nivel : NivelService) { }
 
   ngOnInit() {
     this.adm = this.nivel.verificaURL("Adm")
-    this.user = this.nivel.verificaURL("user")
+    this.User = this.nivel.verificaURL("User")
+    this.Prof = this.nivel.verificaURL("Prof")
+
   }
 
 }

@@ -1,11 +1,15 @@
 <div class="container mt-5 mb-5">
-    <h2 class="title mb-4">Alguns Cursos</h2>
+    <h2 class="title mb-4" *ngIf="!Prof">Alguns Cursos</h2>
     <div class="card-deck">
         <div class="card mb-4 col-4" *ngFor="let i of curso">
             <div class="card-body">
                 <h4 class="card-title title">{{i.nome}}</h4>
                 <p class="card-text">{{i.descricao}}</p>
-                <button type="button" class="btn btn-indigo btn-md">Saiba mais</button>
+                <button *ngIf="!Prof" type="button" class="btn btn-indigo btn-md">Saiba mais</button>
+                <div class="row" *ngIf="Prof">
+                    <button data-toggle="modal" data-target="#form" type="button" class="btn btn-indigo btn-sm">Lançar Atividade</button>
+                    <button type="button" [routerLink]="['/Prof/Atividades']" class="btn btn-indigo btn-sm">ver Atividade</button>
+                </div>
             </div>
         </div>
     </div>

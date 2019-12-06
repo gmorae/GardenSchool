@@ -11,7 +11,23 @@
                 <a class="nav-link" [routerLink]="['/Login']" (click)="reload()">Sair</a>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" *ngIf="!adm && !user">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" *ngIf="Prof">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Prof']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Login']" (click)="reload()">Sair</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" *ngIf="User">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/User']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Login']" (click)="reload()">Sair</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" *ngIf="!adm && !User && !Prof">
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
             </li>

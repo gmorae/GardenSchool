@@ -17,7 +17,6 @@ export class CadastroCursoComponent implements OnInit {
     this.consulta.listCursos()
     this.pegaRetornoCurso$ = this.consulta.pegaRetornoCurso$.subscribe(() => {
       this.curso = this.consulta.Curso
-      console.log(this.curso);
     })
   }
 
